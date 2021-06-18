@@ -1,0 +1,48 @@
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-danger,
+.btn-warning,
+.btn-info {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1400px) {
+    .btn-responsive span {
+        display: none;
+    }
+}
+.btn-primary {
+    color: #fff;
+    background-color: @navbar-default-link-color;
+    border-color: darken(@navbar-default-link-color, 10%);
+    &:hover {
+        background-color: lighten(@navbar-default-link-color, 20%);
+        border-color: lighten(@navbar-default-link-color, 10%);
+    }
+}
+
+.btn-info {
+    color: #fff;
+    background-color: @btn-info-color;
+    border-color: darken(@btn-info-color, 5%);
+    &:hover {
+        color: #fff;
+        background-color: darken(@btn-info-color, 20%);
+        border-color: darken(@btn-info-color, 30%);
+    }
+}
+
+.btn-danger.disabled, .btn-danger[disabled], fieldset[disabled] .btn-danger, .btn-danger.disabled:hover, .btn-danger[disabled]:hover, fieldset[disabled] .btn-danger:hover, .btn-danger.disabled:focus, .btn-danger[disabled]:focus, fieldset[disabled] .btn-danger:focus, .btn-danger.disabled:active, .btn-danger[disabled]:active, fieldset[disabled] .btn-danger:active, .btn-danger.disabled.active, .btn-danger[disabled].active, fieldset[disabled] .btn-danger.active {
+    &:hover {
+        color: #fff;
+        background-color: darken(@btn-info-color, 20%);
+        border-color: darken(@btn-info-color, 30%);
+    }   
+    &:active,
+    &:focus,  {
+        color: #fff;
+        background-color: darken(@btn-info-color, 20%);
+        border-color: darken(@btn-info-color, 30%);
+    }   
+}
